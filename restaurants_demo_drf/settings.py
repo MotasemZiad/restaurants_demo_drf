@@ -48,6 +48,12 @@ REST_FRAMEWORK = {
     )
 }
 
+AUTH_USER_MODEL = "user.Account"
+
+SIMPLE_JWT = {
+    'USER_ID_FIELD': "code",
+}
+
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
