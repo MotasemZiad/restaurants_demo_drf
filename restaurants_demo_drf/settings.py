@@ -36,24 +36,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "user.apps.UserConfig",
     "api.apps.ApiConfig",
     "rest_framework",
-    "rest_framework_simplejwt",
 ]
-
-REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-    )
-}
-
-AUTH_USER_MODEL = "user.Account"
-
-SIMPLE_JWT = {
-    'USER_ID_FIELD': "code",
-    'USER_AUTHENTICATION_RULE': 'rest_framework_simplejwt.authentication.default_user_authentication_rule',
-}
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
