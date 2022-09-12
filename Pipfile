@@ -8,6 +8,7 @@ django = "*"
 djangorestframework = "*"
 djangorestframework-simplejwt = {extras = ["crypto"], version = "*"}
 psycopg2 = "*"
+pillow = "*"
 
 [dev-packages]
 autopep8 = "*"
