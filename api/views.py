@@ -1,8 +1,8 @@
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from serializers import (RestaurantSerializer,
+from .serializers import (RestaurantSerializer,
                          RecipeSerializer, IngredientSerializer)
-from models import (Restaurant, Recipe, Ingredient)
+from .models import (Restaurant, Recipe, Ingredient)
 from django.http import Http404
 from rest_framework import status
 
