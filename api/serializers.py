@@ -21,7 +21,7 @@ class RecipeSerializer(serializers.ModelSerializer):
 
     def get_ingredients(self, recipe):
         try:
-            recipe_ingredients = Ingredient.objects.filter(recipe_id=recipe.id)
+            recipe_ingredients = Ingredient.objects.filter(id=recipe.id)
             return IngredientSerializer(recipe_ingredients, many=True).data
         except Ingredient.DoesNotExist:
             return None
